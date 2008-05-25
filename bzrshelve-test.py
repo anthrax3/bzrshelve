@@ -75,7 +75,7 @@ class DictionaryTests(OpenCloseTests):
 
     self.assertEqual('a', self.shelf['foobar'])
 
-  def test_overwrite_value_short(self):
+  def test_overwrite_value_long(self):
     """Overwrite a key with a longer value."""
 
     self.shelf['foobar'] = 'abc123'
@@ -94,8 +94,8 @@ class DictionaryTests(OpenCloseTests):
 
     self.assertEqual('a', self.shelf['foobar'])
 
-  def test_overwrite_value_short_synced(self):
-    """Overwrite a key with a longer value."""
+  def test_overwrite_value_long_synced(self):
+    """Synchronously overwrite a key with a longer value."""
 
     self.shelf['foobar'] = 'abc123'
     self.shelf.sync()
