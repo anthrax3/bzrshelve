@@ -1,0 +1,1 @@
+An implementation of Python's shelve API on a Bazaar backend.
